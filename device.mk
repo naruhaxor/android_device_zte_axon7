@@ -21,8 +21,3 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 include $(LOCAL_PATH)/product/*.mk
 
 $(call inherit-product-if-exists, vendor/zte/axon7/axon7-vendor.mk)
-
-# Ubuntu Overlay Files
-#
-PRODUCT_COPY_FILES += \
-    device/zte/axon7/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
