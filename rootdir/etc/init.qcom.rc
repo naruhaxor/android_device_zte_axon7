@@ -613,11 +613,11 @@ on property:debug.zte.vr_mode=0
     stop thermal-perf
     start thermal-engine
 
-service time_daemon /system/bin/time_daemon
-    class late_start
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
+#service time_daemon /system/bin/time_daemon
+#    class late_start
+#    user root
+#    group root
+#    writepid /dev/cpuset/system-background/tasks
 
 service adsprpcd /system/bin/adsprpcd
     class main
