@@ -54,4 +54,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.ssr=false \
     tunnel.audio.encode=false \
     use.qti.sw.ape.decoder=true \
-    use.voice.path.for.pcm.voip=true
+    use.voice.path.for.pcm.voip=true \
+    ro.qc.sensors.wl_dis=true
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/unblock_wakelock.sh:system/etc/unblock_wakelock.sh

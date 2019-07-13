@@ -386,6 +386,16 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
 on property:bluetooth.hciattach=true
     start hciattach
 
+on property:init.svc.sensorservice=running
+    start unblock_wakelock
+
+service unblock_wakelock /system/bin/sh /system/etc/unblock_wakelock.sh
+    class main
+    user root
+    group root
+    disabled
+    oneshot
+
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
