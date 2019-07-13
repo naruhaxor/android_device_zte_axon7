@@ -28,3 +28,8 @@ PRODUCT_COPY_FILES += \
     device/zte/axon7/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     device/zte/axon7/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf
+
+# UBPorts
+PRODUCT_PACKAGES += \
+    libminisf \
+    minimediaservice

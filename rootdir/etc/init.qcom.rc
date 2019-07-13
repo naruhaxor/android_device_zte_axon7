@@ -726,3 +726,16 @@ service fingerprintd /system/bin/fingerprintd
     user system
     onrestart restart gx_fpd
     writepid /dev/cpuset/system-background/tasks
+
+service minimedia /system/bin/minimediaservice
+    class main
+    user media
+    group audio camera
+    ioprio rt 4
+#   hack to make recorded video playback work
+    setenv LD_PRELOAD /system/lib/libOmxVdec.so
+    
+service miniafservice /system/bin/miniafservice
+    class core
+    user root
+    group audio
