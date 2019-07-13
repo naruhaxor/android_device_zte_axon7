@@ -25,5 +25,5 @@ $(call inherit-product, device/zte/axon7/device.mk)
 PRODUCT_DEVICE := axon7
 PRODUCT_NAME := full_axon7
 PRODUCT_BRAND := ZTE
-PRODUCT_MODEL := ZTE A2017U
+PRODUCT_MODEL := Axon 7
 PRODUCT_MANUFACTURER := ZTE
