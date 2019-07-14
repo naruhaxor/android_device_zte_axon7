@@ -54,6 +54,8 @@ on init
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
     write sys/module/qpnp_rtc/parameters/poweron_alarm 1
+    
+    echo sta > /sys/module/wlan/parameters/fwpath
 
 on fs
     wait /dev/block/bootdevice
