@@ -5,7 +5,7 @@
   },
   {
     "repository": "android_kernel_zte_msm8996",
-    "target_path": "kernel/zte/msm8996"
+    "target_path": "kernel/zte/fujisan"
   },
   {
     "repository": "android_packages_apps_FlipFlap",
